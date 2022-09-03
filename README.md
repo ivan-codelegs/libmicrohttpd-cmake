@@ -9,7 +9,7 @@ cmake -B bin-debug ^
 -G "CodeBlocks - Ninja" ^
 -DCMAKE_C_COMPILER=clang-cl ^
 -DCMAKE_CXX_COMPILER=clang-cl ^
--DHTTPD_ROOT_PATH="C:/path/to/libmicrohttpd/" ^
+-DHTTPD_ROOT_PATH=C:\path\to\libmicrohttpd ^
 -DCMAKE_BUILD_TYPE=Debug .
 
 cmake --build bin-debug --target all
@@ -21,7 +21,7 @@ cmake -B bin-release ^
 -G "CodeBlocks - Ninja" ^
 -DCMAKE_C_COMPILER=clang-cl ^
 -DCMAKE_CXX_COMPILER=clang-cl ^
--DHTTPD_ROOT_PATH="C:/path/to/libmicrohttpd/" ^
+-DHTTPD_ROOT_PATH=C:\path\to\libmicrohttpd ^
 -DCMAKE_BUILD_TYPE=RelWithDebInfo .
 
 cmake --build bin-release --target all
