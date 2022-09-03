@@ -5,11 +5,11 @@ Next examples show you how to build `libmicrohttpd` project with `cmake`
 - Debug Example
 ```
 mkdir bin-debug
-cmake -B bin-debug \
--G "CodeBlocks - Ninja" \
--DCMAKE_C_COMPILER=clang-cl \
--DCMAKE_CXX_COMPILER=clang-cl \
--DHTTPD_ROOT_PATH="C:/path/to/libmicrohttpd/" \
+cmake -B bin-debug ^
+-G "CodeBlocks - Ninja" ^
+-DCMAKE_C_COMPILER=clang-cl ^
+-DCMAKE_CXX_COMPILER=clang-cl ^
+-DHTTPD_ROOT_PATH="C:/path/to/libmicrohttpd/" ^
 -DCMAKE_BUILD_TYPE=Debug .
 
 cmake --build bin-debug --target all
@@ -17,11 +17,11 @@ cmake --build bin-debug --target all
 - Release with Debug Information Example
 ```
 mkdir bin-release
-cmake -B bin-release \
--G "CodeBlocks - Ninja" \
--DCMAKE_C_COMPILER=clang-cl \
--DCMAKE_CXX_COMPILER=clang-cl \
--DHTTPD_ROOT_PATH="C:/path/to/libmicrohttpd/" \
+cmake -B bin-release ^
+-G "CodeBlocks - Ninja" ^
+-DCMAKE_C_COMPILER=clang-cl ^
+-DCMAKE_CXX_COMPILER=clang-cl ^
+-DHTTPD_ROOT_PATH="C:/path/to/libmicrohttpd/" ^
 -DCMAKE_BUILD_TYPE=RelWithDebInfo .
 
 cmake --build bin-release --target all
