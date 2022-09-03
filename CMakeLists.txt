@@ -44,6 +44,7 @@ target_sources( ${PROJECT_NAME} PRIVATE
 )
 
 set_target_properties( ${PROJECT_NAME} PROPERTIES
+     C_STANDARD 17
    CXX_STANDARD 17
 )
 
